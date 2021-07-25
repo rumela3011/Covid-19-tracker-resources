@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>COVID-19 India Tracker</title>
+
+        <meta name="description" content="A Simple COVID-19 Tracker for India">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Gentium+Basic&display=swap"
+          rel="stylesheet"
+        />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">     
+        <link rel="stylesheet" href="master.css">
+      </head>
+    <body>
+
+      <div class="container-fluid">
+
+            <header class="header">
+              <h1 class="header-heading display-4">COVID-19 INDIA TRACKER</h1>
+              <p class=" header-paragraph lead">State-wise distribution of COVID-19 affected areas within India</p>
+            </header>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+
+                <!-- CONFIRMED CASES CARD -->
+                <div class="col-lg-3 d-flex justify-content-center">
+                    <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                        <div class="card-heading card-header text-center">CONFIRMED</div>
+                        <div class="card-body">
+                          <p class="confirmed card-text text-center">&nbsp;</p>
+                        </div>
+                      </div>
+                </div>
+
+                <!-- ACTIVE CASES CARD -->
+
+                <div class="col-lg-3 d-flex justify-content-center">
+                    <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                        <div class="card-heading card-header text-center">ACTIVE</div>
+                        <div class="card-body">
+                          <p class="active card-text text-center">&nbsp;</p>
+                        </div>
+                      </div>
+                </div>
+
+
+                <!-- RECOVERED CASES CARD -->
+
+                <div class="col-lg-3 d-flex justify-content-center">
+                    <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                        <div class="card-heading card-header text-center">RECOVERED </div>
+                        <div class="card-body">
+                          <p class="recovered card-text text-center">&nbsp;</p>
+                        </div>
+
+                </div>
+            </div>
+
+
+
+                <!-- DEATHS CARD -->
+                <div class="col-lg-3 d-flex justify-content-center">
+                <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                    <div class="card-heading card-header text-center">DEATHS</div>
+                    <div class="card-body">
+                      <p class="deaths card-text text-center">&nbsp;</p>
+                    </div>
+                  </div>
+                  </div>
+
+
+    </div>
+        </div>
+
+        <!--AJAX PIE-CHART-->
+
+        <div class="chart-container container-fluid">
+          <h2 class="text-center"> DATA VISUALIZED </h2>
+          <canvas id="confirmedChart" width="400" height="400"></canvas>
+
+        </div>
+
+        <!--Region-wise distribuition-->
+        <div class="table-container container-fluid">
+          <h2 class="text-center"> REGION-WISE TALLY </h2>
+
+            <table class="table table-dark table-hover">
+              <thead >
+                <tr>
+                  <th scope="col">Region</th>
+                  <th scope="col">Confirmed Cases</th>
+                  <th scope="col">Active Cases</th>
+                  <th scope="col">Recovered</th>
+                  <th scope="col">Deaths</th>
+                </tr>
+              </thead>
+              <tbody>
+ 
+              </tbody>
+            </table>
+        </div>
+
+        <!--Footer-->
+        <div class="container-fluid">
+          <footer>
+            &copy; Rumela Ghosal | 2021
+          </footer>
+        </div>
+
+
+
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+
+         <script src="master.js"></script>
+    </body>
+</html>

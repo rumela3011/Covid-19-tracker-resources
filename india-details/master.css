@@ -1,0 +1,130 @@
+html {
+  font-size: 67.5%;
+}
+
+body {
+  font-family: "Gentium Basic", serif;
+}
+
+.header {
+  background-image: url("https://images.everydayhealth.com/images/coronavirus/tippi-covid-19-header_16x9.jpg?sfvrsn=27f3b5a_12");
+  background-size: cover;
+  background-position: center;
+  padding: 3rem;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header-heading {
+  color: #eee;
+}
+
+h2 {
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.header-heading,
+.header-paragraph {
+  background-color: #212529;
+  padding: 2rem;
+  border-radius: 5px;
+  color: #eee;
+}
+
+.header-paragraph {
+  background-color: #212529;
+  width: 30%;
+  margin: 0 auto;
+  text-align: center;
+}
+.container-fluid {
+  padding: 0;
+}
+
+.display-4 {
+  font-weight: 900;
+}
+
+.card-heading {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.card-text {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.card {
+  padding: 10px 10px;
+}
+
+.chart-container {
+  padding: 3rem;
+  margin-top: 3rem;
+  width: 50%;
+  height: 50%;
+}
+
+.table-container {
+  padding: 2rem;
+}
+
+footer {
+  margin-top: 2rem;
+  text-align: center;
+  background-color: #333;
+  color: #eee;
+  padding: 3rem;
+}
+
+@media (max-width: 1250px) {
+  .card {
+    padding: 5px 30px;
+  }
+
+  .card-heading {
+    font-size: 1rem;
+  }
+
+  .card-text {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .card {
+    padding: 5px 30px;
+  }
+
+  .card-heading {
+    font-size: 1rem;
+  }
+
+  .card-text {
+    font-size: 1.5rem;
+  }
+
+  .chart-container {
+    padding: 3rem;
+    margin-top: 3rem;
+    width: 100%;
+    height: 100%;
+  }
+
+  .display-4 {
+    font-size: 1.5rem;
+  }
+
+  .header-paragraph {
+    color: #888;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .table-container {
+    width: 100vw;
+  }
+}
